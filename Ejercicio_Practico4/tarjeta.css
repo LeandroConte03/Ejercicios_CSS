@@ -1,0 +1,26 @@
+.tarjeta {
+    background-color: #f8f9fa; 
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #080000;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #2c3e50; 
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(52, 152, 219); 
+}
+
+.contacto {
+    font-family: 'Roboto', sans-serif;
+    color: gray; 
+}

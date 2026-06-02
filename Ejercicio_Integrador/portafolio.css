@@ -1,0 +1,98 @@
+/* ==========================================
+   1. CONFIGURACIÓN GLOBAL (Selector Universal)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Primera fuente */
+    color: rgb(44, 62, 80); /* Formato RGB */
+    line-height: 1.6;
+    background-color: #fcfcfc;
+}
+
+/* ==========================================
+   2. TIPOGRAFÍAS Y ELEMENTOS DE SECCIÓN
+   ========================================== */
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Segunda fuente */
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db; /* Uso de border */
+    padding-bottom: 5px;
+}
+
+section {
+    padding: 40px 20px; /* Uso de padding */
+    margin: 20px auto;  /* Uso de margin */
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+/* ==========================================
+   3. SELECTORES DE ETIQUETA, CLASE E ID
+   ========================================== */
+
+/* Selector de Etiqueta */
+header {
+    background-color: #2c3e50; /* Formato Hexadecimal */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Selector de Clase */
+.main-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.text-profile {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Selector de ID */
+#contacto {
+    text-align: center;
+    background-color: rgb(245, 247, 250);
+}
+
+#btn-contacto {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* ==========================================
+   4. DEMOSTRACIÓN DE ESPECIFICIDAD
+   ========================================== */
+
+/* 
+   El siguiente selector (#contacto #btn-contacto) se declara con un peso alto (dos IDs: 2-0-0)
+   para asegurar que los estilos de este botón de llamada a la acción específico ganen 
+   a cualquier otra regla de botones genéricos de la página, sin importar el orden de cascada.
+*/
+#contacto #btn-contacto {
+    background-color: #27ae60; /* Cambia a verde específicamente en la sección contacto */
+    border: 1px solid #219653;
+}

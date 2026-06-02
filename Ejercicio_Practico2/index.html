@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascada CSS</title>
+    <style>
+        p { color: blue; }
+        p { color: green; }
+        .destacado { color: orange; }
+        #unico { color: red; }
+    </style>
+</head>
+<body>
+    <p>¿De qué color soy?</p>
+    <p class="destacado">¿Y yo?</p>
+    <p class="destacado" id="unico">¿Y yo qué color tengo?</p>
+    <p class="destacado" id="unico"
+       style="color: purple;">¿Y ahora?</p>
+</body>
+</html>
+<!-- Aivinanza 
+ 1 Verde: verde: Porque el ultimo cambio declarado en style es green.
+ 2 Naranja: naranja: Porque se rige por la clase siendo prioridad sobre la etiqueta.
+ 3 Rojo: rojo: Porque a pesar de tener clase el ID es prioritario.
+ 4 Purpura: purpura: Porque esta escrito inline que es prioridad sobre todas las demas, aunque tampoco funcionaria el id porque solo puede haber un elemento.
+-->

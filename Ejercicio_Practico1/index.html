@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formas de aplicar CSS</title>
+    <!-- Aquí vincular el archivo externo -->
+     <link rel="stylesheet" href="estilos.css">
+    <!-- Aquí agregar el estilo interno -->
+     <style>
+        p {
+            color: brown;
+            font-size: 20px;
+        }
+     </style>
+</head>
+<body>
+    <p style="color: blue;">Párrafo 1 - Estilizar con CSS inline</p>
+    <p>Párrafo 2 - Estilizar con CSS interno</p>
+    <p class="externo">Párrafo 3 - Estilizar con CSS externo</p>
+</body>
+ <!-- Me parece que para mantener mas limpio el HTML es mejor usar el enlace externo, que permite tambien manejar mejor el control del estilo a la hora de hacer cambios o correciones sin necesidad de hacerlo uno por uno.-->
+</html>

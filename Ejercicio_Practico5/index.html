@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p class="info" id="mensaje">
+            ¿De qué color es mi fondo?
+        </p>
+    </div>
+</body>
+
+<!-- 
+
+Selector    Especificidad (I-C-E)   Valor numérico de guía
+A: p            0 - 0 - 1                    1
+B: .info        0 - 1 - 0                    10
+C: p.info       0 - 1 - 1                    11
+D: #mensaje     1 - 0 - 0                    100
+E: div p.info   0 - 1 - 2                    12
+
+Gana el selector D ya que la ID tiene un nievel de prioridad superior a
+cualquier cantidad acumulada de clases o etiquetas (su peso es mayor en CSS:1-0-0 le gana a 0-1-2)
+-->
+
+</html>
